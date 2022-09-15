@@ -1,2 +1,2 @@
 Access your node by running these commands:
-https://github.com/randmeister/algon#access-node-via-minikube-tunnel
+kubectl get services -n <namespace>
