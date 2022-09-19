@@ -3,12 +3,12 @@ entries:
   algon:
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2022-09-15T19:26:13.147727231Z"
+    created: "2022-09-19T17:14:27.712986599Z"
     description: Stable channel Algorand node helm chart
-    digest: c1e46653f51fe96c3f31096ffb02735d3ba95c132864b9e9a94d4e05ea11a405
+    digest: b37ad8c89913c1ec4d6f3693a5a2235aa037027e2020e7de08bd6e656ba9dced
     name: algon
     type: application
     urls:
-    - https://github.com/lugonzalezdev/algon/releases/download/algon-1.0.6/algon-1.0.6.tgz
-    version: 1.0.6
-generated: "2022-09-15T19:26:13.14781075Z"
+    - https://github.com/lugonzalezdev/algon/releases/download/algon-1.0.7/algon-1.0.7.tgz
+    version: 1.0.7
+generated: "2022-09-19T17:14:27.712992099Z"
