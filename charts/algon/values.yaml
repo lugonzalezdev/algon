@@ -107,7 +107,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 image:
-  repository: randmeister/algon
+  repository: us.gcr.io/wao-crypto/algon:0.0.1
   tag: stable
   pullPolicy: Always
 
@@ -120,7 +120,8 @@ podAnnotations: {}
 
 podSecurityContext: {}
 
-securityContext: {}
+securityContext:
+  {}
   # privileged: false
   # readOnlyRootFilesystem: true
   # allowPrivilegeEscalation: false
