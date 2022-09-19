@@ -107,8 +107,8 @@ nameOverride: ""
 fullnameOverride: ""
 
 image:
-  repository: us.gcr.io/wao-crypto/algon:0.0.1
-  tag: stable
+  repository: us.gcr.io/wao-crypto/algon
+  tag: 0.0.1
   pullPolicy: Always
 
 serviceAccount:
