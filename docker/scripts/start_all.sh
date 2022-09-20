@@ -4,7 +4,8 @@ set -e
 
 # Start algod
 cp node/genesisfiles/${ALGORAND_NETWORK}/genesis.json ${ALGORAND_DATA}
-/algorand/node/goal node start
+/algorand/node/algod -l 0.0.0.0:8081 &
+sleep 5
 
 
 # Store algod.token and algod.admin.token in kubernetes secret. Tokens are shared among node instances when replicas are greater than 1. 

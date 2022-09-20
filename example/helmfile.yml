@@ -2,10 +2,10 @@ helmDefaults:
   verify: false
   wait: true
   historyMax: 3
-  createNamespace: true 
+  createNamespace: true
 repositories:
   - name: algon
-    url: https://randmeister.github.io/algon
+    url: https://lugonzalezdev.github.io/algon
   - name: loki
     url: https://grafana.github.io/loki/charts
 
@@ -28,7 +28,7 @@ releases:
           alertmanager:
           persistentVolume:
             enabled: false
-          server: 
+          server:
             persistentVolume:
               enabled: false
       - loki:

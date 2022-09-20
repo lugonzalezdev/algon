@@ -11,5 +11,5 @@ spec:
     - name: test-status
       image: curlimages/curl:latest
       command: ['curl']
-      args: ['--fail', 'http://algon.algon.svc.clustelocal:8080/metrics']
+      args: ['--fail', 'http://algon.algon.svc.clustelocal:8081/metrics']
   restartPolicy: Never

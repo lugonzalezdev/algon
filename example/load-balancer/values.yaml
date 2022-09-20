@@ -2,7 +2,7 @@ replicaCount: 2
 
 service:
   type: LoadBalancer
-  port: 8080
+  port: 8081
 
 ingress:
   enabled: true
@@ -118,7 +118,8 @@ podAnnotations: {}
 
 podSecurityContext: {}
 
-securityContext: {}
+securityContext:
+  {}
   # privileged: false
   # readOnlyRootFilesystem: true
   # allowPrivilegeEscalation: false
