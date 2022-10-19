@@ -19,13 +19,13 @@ ingress:
 
 algorand:
   network: mainnet
-  mood: Archive
+  mood: NoArchive
   config:
     algod:
       Version: 13
       AccountsRebuildSynchronousMode: 1
       AnnounceParticipationKey: true
-      Archival: true # Indexer => True
+      Archival: false # Indexer => True
       BaseLoggerDebugLevel: 4
       BroadcastConnectionsLimit: -1
       CadaverSizeTarget: 1073741824
@@ -66,7 +66,7 @@ algorand:
       IncomingConnectionsLimit: 10000
       IncomingMessageFilterBucketCount: 5
       IncomingMessageFilterBucketSize: 512
-      IsIndexerActive: true # Indexer => True
+      IsIndexerActive: false # Indexer => True
       LedgerSynchronousMode: 2
       LogArchiveMaxAge: ""
       LogArchiveName: "node.archive.log"
@@ -137,10 +137,10 @@ securityContext:
 resources:
   limits:
     cpu: 2
-    memory: 1000Gi
+    memory: 10Gi
   requests:
     cpu: 1
-    memory: 1000Gi
+    memory: 10Gi
 
 autoscaling:
   enabled: false
