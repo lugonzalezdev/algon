@@ -24,8 +24,8 @@ fi
 export token=
 
 # Fast catchup
-/algorand/node/goal node catchup `curl https://algorand-catchpoints.s3.us-east-2.amazonaws.com/channel/${ALGORAND_NETWORK}/latest.catchpoint`
-
-
+if [ "${NODE_MOOD}" = "NoArchive" ]; then 
+    /algorand/node/goal node catchup `curl https://algorand-catchpoints.s3.us-east-2.amazonaws.com/channel/${ALGORAND_NETWORK}/latest.catchpoint`
+fi
 # Write node.log to stdout
 tail -f ${ALGORAND_DATA}/node.log

@@ -85,6 +85,8 @@ spec:
               value: /algorand/node/data
             - name: ALGORAND_NETWORK
               value:  {{ .Values.algorand.network }}
+            - name: NODE_MOOD
+              value: {{ .Values.algorand.mood }}
           volumeMounts:
             - mountPath: "/algorand/node/data"
               name: data-volume
